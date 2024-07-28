@@ -1,8 +1,23 @@
 :root {
+/*  --border-color: rgb(217, 229, 240);
+  --inputBorder-color: rgb(80, 133, 188);
+
+  --buttonBackground-color: rgb(104, 149, 197);
+  --buttonHoverBackground-color: rgb(166, 189, 219);
+  --buttonText-color: rgb(217, 229, 240);
+
+  --tileBackground-color: rgb(128, 166, 206);
+
+  --inputText-color: rgb(45, 114, 178);
+  --regularText-color: rgb(80, 133, 188);*/
+
+
   --header-height: calc(1.3rem + 40px);
-  --point-color: blue;
-  --atmo-color: #F0FFFF;
-  --theme-color: lightblue;
+
+  --point-color: rgb(8, 96, 168);
+  --regular-color: rgb(45, 114, 178);
+  --theme-color: rgb(166, 189, 219);
+  --atmo-color: rgb(191, 209, 229);
 }
 
 * {
@@ -65,7 +80,8 @@ header {
 }
 
 #top-button {
-  background-color: var(--theme-color);
+  background: var(--theme-color);
+  color: var(--point-color);
   text-align: center;
   padding-top: 5px;
   width: 30px;
@@ -95,6 +111,7 @@ main section {
 
 #welcome-text {
   font-size: 4rem;
+  color: var(--point-color);
 }
 
 .section-header {
@@ -105,6 +122,7 @@ main section {
   width: 90vw;
   padding-bottom: 1.5rem;
   border-bottom: 2px solid var(--theme-color);
+  color: var(--point-color);
 }
 
 #intro-section {
@@ -120,6 +138,8 @@ main section {
   justify-content: center;
   align-items: center;
   place-items: center;
+
+  color: var(--regular-color);
 }
 
 #projects {
@@ -150,14 +170,14 @@ img {
 }
 
 .project-tile {
-  color: black;
+  color: white;
   font-size: 1.1rem;
   border-radius: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--theme-color);
+  background: var(--theme-color);
   transition: transform 0.5s ease-in-out 0ms;
   /* border: 2px solid blue; */
 }
@@ -170,7 +190,7 @@ img {
   margin: 0;
   min-height: 300px;
   height: 100vh;
-  background-color: var(--atmo-color);
+  background: var(--atmo-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,7 +213,7 @@ img {
 #social-media > a, #email-address {
   text-decoration: none;
   font-size: 2rem;
-  color: blue;
+  color: var(--regular-color);
   transition: transform 0.5s ease-in-out 0ms;
 }
 
@@ -207,7 +227,7 @@ img {
   height: 50px;
   font-size: 30px;
   text-align: center;
-  background: blue;
+  background: var(--regular-color);
   color: white;
   padding-top: 10px;
   /* border: 1px solid red; */
@@ -227,9 +247,10 @@ img {
 footer {
   margin: 0;
   border: 1px solid transparent;
-  background-color: var(--theme-color);
+  background: var(--theme-color);
   min-height: var(--header-height);
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
