@@ -48,6 +48,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  box-shadow: inset 0px -5px 10px 0px var(--atmo-color);
 }
 
 #navbar {
